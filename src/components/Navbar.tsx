@@ -100,7 +100,7 @@ export default function Navbar() {
   "
           >
             <img
-              src="src\assets\whatsapp.svg"
+              src="/whatsapp.svg"
               alt="WhatsApp"
               className="h-8 w-8 object-contain"
             />
