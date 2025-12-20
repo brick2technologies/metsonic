@@ -1,0 +1,64 @@
+/* ===============================
+   Google Font – Varela Round
+================================ */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Varela Round', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  color: #0f172a;
+  /* slate-900 */
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   Custom Font Utility Classes
+   (Use directly in JSX)
+================================ */
+
+/* Serif Display – Headings / Hero */
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* Elegant Serif – Long text / quotes */
+.font-serif {
+  font-family: 'Cardo', serif;
+}
+
+/* Modern Sans – UI / Sections */
+.font-ui {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Mono – Code / Numbers */
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ================================
+   Optional Typography Tweaks
+================================ */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.015em;
+}
+
+p {
+  line-height: 1.75;
+}
