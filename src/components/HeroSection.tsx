@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const SLIDE_DURATION = 5000;
 
@@ -141,9 +142,9 @@ export default function HeroSlider() {
                   {slides[index].subtitle}
                 </p>
                 <div className="mt-10 flex flex-wrap justify-center gap-4">
-                  <button className="px-8 py-3 rounded-full border border-blue-900 text-sm hover:bg-blue-900 hover:text-white transition">
+                  <Link to="/products" className="px-8 py-3 rounded-full border border-blue-900 text-sm hover:bg-blue-900 hover:text-white transition">
                     Explore Products
-                  </button>
+                  </Link>
                   <button className="px-8 py-3 rounded-full border border-gray-300 text-sm hover:border-blue-900 transition">
                     Download Catalog
                   </button>

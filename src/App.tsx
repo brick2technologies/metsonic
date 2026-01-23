@@ -16,10 +16,12 @@ import ChemicalTestingPage from "./productpages/ChemicalTestingPage";
 import FoundryPage from "./productpages/FoundryPage";
 import UltrasonicPage from "./productpages/UltrasonicPage";
 import ConsumablesPage from "./productpages/ConsumablesPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

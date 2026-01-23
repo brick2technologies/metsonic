@@ -11,13 +11,13 @@ export default function Footer() {
   {/* Logo + Company Name */}
   <div className="flex items-center  mb-4">
     <img
-      src="logo.jpg"
+      src="/logo.jpg"
       alt="Metsonic Engineers Pvt. Ltd. logo"
       className="h-12 w-auto object-contain"
     />
 
     <img
-      src="name.jpg"
+      src="/name.jpg"
       alt="Metsonic Engineers Pvt. Ltd."
       className="h-8 w-auto object-contain"
     />

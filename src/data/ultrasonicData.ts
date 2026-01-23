@@ -10,7 +10,7 @@ export const ultrasonicProducts: UltrasonicProduct[] = [
   {
     id: 11001,
     name: "Portable Ultrasonic Cleaner",
-    image: "/images/ultrasonic/portable-cleaner.jpg",
+    image: "/UltraSonic/portable-cleaner.jpeg",
     description:
       "Compact ultrasonic cleaner designed for on-site and laboratory cleaning of small components.",
     specifications: {
@@ -23,7 +23,7 @@ export const ultrasonicProducts: UltrasonicProduct[] = [
   {
     id: 11002,
     name: "Industrial Ultrasonic Cleaning System",
-    image: "/images/ultrasonic/industrial-cleaner.jpg",
+    image: "/UltraSonic/industrial-cleaner.jpeg",
     description:
       "High-capacity ultrasonic cleaning system for heavy-duty industrial applications.",
     specifications: {

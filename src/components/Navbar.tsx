@@ -9,6 +9,16 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+const productCategories = [
+  { name: "Metallurgical Equipment", href: "/products/metallurgical" },
+  { name: "Physical Testing Equipment", href: "/products/physical-testing" },
+  { name: "Non-Destructive Testing (NDT)", href: "/products/ndt" },
+  { name: "Foundry Equipment", href: "/products/foundry" },
+  { name: "Ultrasonic Machines", href: "/products/ultrasonic" },
+  { name: "Chemical Testing Equipment", href: "/products/chemical-testing" },
+  { name: "Consumables", href: "/products/consumables" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { openModal } = useEnquiryModal();
@@ -19,14 +29,11 @@ export default function Navbar() {
 
         {/* ================= LEFT: LOGO ================= */}
         <div className="flex items-center gap-3">
-          {/* Icon / Symbol Logo */}
           <img
             src="/logo.jpg"
             alt="Company Logo Icon"
             className="h-12 sm:h-14 w-auto object-contain"
           />
-
-          {/* Company Name Logo */}
           <img
             src="/name.jpg"
             alt="Company Name Logo"
@@ -34,41 +41,107 @@ export default function Navbar() {
           />
         </div>
 
+        {/* ================= DESKTOP NAV ================= */}
         <nav className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="
-        relative
-        text-[15px] lg:text-[16px]
-        font-normal
-        tracking-wide
-        text-gray-600
-        transition-colors duration-300
-        hover:text-blue-900
-        after:absolute
-        after:left-0
-        after:-bottom-1
-        after:h-[1.5px]
-        after:w-0
-        after:bg-blue-800
-        after:transition-all
-        after:duration-300
-        hover:after:w-full
-      "
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
+          {navLinks.map((link) =>
+            link.name === "Products" ? (
+              <div key={link.name} className="relative group">
+                {/* Products link */}
+                <a
+                  href={link.href}
+                  className="
+                    relative
+                    text-[15px] lg:text-[16px]
+                    font-normal
+                    tracking-wide
+                    text-gray-600
+                    transition-colors duration-300
+                    hover:text-blue-900
+                    after:absolute
+                    after:left-0
+                    after:-bottom-1
+                    after:h-[1.5px]
+                    after:w-0
+                    after:bg-blue-800
+                    after:transition-all
+                    after:duration-300
+                    hover:after:w-full
+                  "
+                >
+                  Products
+                </a>
 
+                {/* Dropdown */}
+                <div
+                  className="
+                    invisible opacity-0
+                    group-hover:visible group-hover:opacity-100
+                    absolute left-0 top-full mt-3
+                    w-72
+                    rounded-xl
+                    bg-white
+                    shadow-xl
+                    border
+                    transition-all
+                    duration-200
+                    z-50
+                  "
+                >
+                  <ul className="py-3">
+                    {productCategories.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="
+                            block
+                            px-5 py-2
+                            text-sm
+                            text-gray-700
+                            hover:bg-blue-50
+                            hover:text-blue-900
+                            transition
+                          "
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                className="
+                  relative
+                  text-[15px] lg:text-[16px]
+                  font-normal
+                  tracking-wide
+                  text-gray-600
+                  transition-colors duration-300
+                  hover:text-blue-900
+                  after:absolute
+                  after:left-0
+                  after:-bottom-1
+                  after:h-[1.5px]
+                  after:w-0
+                  after:bg-blue-800
+                  after:transition-all
+                  after:duration-300
+                  hover:after:w-full
+                "
+              >
+                {link.name}
+              </a>
+            )
+          )}
+        </nav>
 
         {/* ================= RIGHT: CTA + ICONS ================= */}
         <div className="flex items-center gap-3">
-          {/* Enquiry Button (Desktop only) */}
           <button
-           onClick={openModal}
+            onClick={openModal}
             className="
               hidden sm:inline-flex
               items-center
@@ -90,14 +163,14 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="
-    inline-flex
-    h-10 w-10
-    items-center justify-center
-    rounded-full
-    bg-green-500
-    transition
-    hover:bg-green-600
-  "
+              inline-flex
+              h-10 w-10
+              items-center justify-center
+              rounded-full
+              bg-green-500
+              transition
+              hover:bg-green-600
+            "
           >
             <img
               src="/whatsapp.svg"
@@ -106,8 +179,7 @@ export default function Navbar() {
             />
           </a>
 
-
-          {/* Mobile Menu Button */}
+          {/* Mobile menu toggle */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"
@@ -128,23 +200,25 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="
-    px-4 py-3
-    text-[15px]
-    font-normal
-    tracking-wide
-    text-gray-700
-    hover:bg-gray-100
-    rounded-md
-  "
+                  px-4 py-3
+                  text-[15px]
+                  font-normal
+                  tracking-wide
+                  text-gray-700
+                  hover:bg-gray-100
+                  rounded-md
+                "
               >
                 {link.name}
               </a>
-
             ))}
 
-            {/* Mobile Enquiry Button */}
-            <a
-              href="/enquiry"
+            {/* Mobile Enquiry */}
+            <button
+              onClick={() => {
+                setOpen(false);
+                openModal();
+              }}
               className="
                 mt-2
                 text-center
@@ -157,7 +231,7 @@ export default function Navbar() {
               "
             >
               Enquiry Now
-            </a>
+            </button>
           </div>
         </div>
       )}

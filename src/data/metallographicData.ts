@@ -20,7 +20,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 101,
         name: "Monocular Metallurgical Microscope",
-        image: "/images/microscopes/monocular.jpg",
+        image: "/Metallurgy/microscopes/monocular.jpeg",
         description:
           "Basic metallurgical microscope suitable for routine microstructural examination using reflected light.",
         specifications: {
@@ -33,7 +33,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 102,
         name: "Binocular Metallurgical Microscope",
-        image: "/images/microscopes/binocular.jpg",
+        image: "/Metallurgy/microscopes/binocular.png",
         description:
           "Provides comfortable two-eye viewing for prolonged metallographic analysis.",
         specifications: {
@@ -46,7 +46,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 103,
         name: "Trinocular Metallurgical Microscope",
-        image: "/images/microscopes/trinocular.jpg",
+        image: "/Metallurgy/microscopes/trinocular.jpeg",
         description:
           "Allows simultaneous visual observation and digital image capture.",
         specifications: {
@@ -59,7 +59,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 104,
         name: "Inverted Metallurgical Microscope",
-        image: "/images/microscopes/inverted.jpg",
+        image: "/Metallurgy/microscopes/inverted.jpeg",
         description:
           "Designed for examination of large, heavy, or mounted samples without sectioning.",
         specifications: {
@@ -72,7 +72,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 105,
         name: "Computer Image Capture System",
-        image: "/images/microscopes/image-capture.jpg",
+        image: "/Metallurgy/microscopes/capture.jpeg",
         description:
           "Integrated system with colour camera and software for image capture and analysis.",
         specifications: {
@@ -85,7 +85,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 106,
         name: "Computer Imaging & Image Analyser System",
-        image: "/images/microscopes/image-analyser.jpg",
+        image: "/Metallurgy/microscopes/image-analysis.jpeg",
         description:
           "Advanced metallographic system for quantitative microstructure analysis.",
         specifications: {
@@ -105,7 +105,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 201,
         name: "Single Disc Polishing Machine",
-        image: "/images/polishing/single-disc.jpg",
+        image: "/Metallurgy/polishing/single-disc.webp",
         description:
           "Compact polishing machine for basic metallographic sample preparation.",
         specifications: {
@@ -117,7 +117,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 202,
         name: "Double Disc Polishing Machine",
-        image: "/images/polishing/double-disc.jpg",
+        image: "/Metallurgy/polishing/double-disc.webp",
         description:
           "Dual-disc system for efficient and faster sample preparation.",
         specifications: {
@@ -129,7 +129,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 203,
         name: "Single Disc Variable Speed Polishing Machine",
-        image: "/images/polishing/triple-disc.jpg",
+        image: "/Metallurgy/polishing/single-disc.webp",
         description:
           "High-throughput polishing system for laboratories with heavy workload.",
         specifications: {
@@ -141,7 +141,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 204,
         name: "Double Disc Variable Speed Polishing Machine",
-        image: "/images/polishing/triple-disc.jpg",
+        image: "/Metallurgy/polishing/double-disc.webp",
         description:
           "High-throughput polishing system for laboratories with heavy workload.",
         specifications: {
@@ -153,7 +153,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 205,
         name: "Automatic Computer Controlled Polishing Machine",
-        image: "/images/polishing/automatic.jpg",
+        image: "/Metallurgy/polishing/computer-disc.webp",
         description:
           "Fully automatic polishing system ensuring repeatable and consistent results.",
         specifications: {
@@ -172,7 +172,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 301,
         name: "Portable In-situ Metallography Kit",
-        image: "/images/in-situ/portable-kit.jpg",
+        image: "/Metallurgy/in-situ/portable-kit.jpg",
         description:
           "Used for on-site metallographic examination without cutting samples.",
         specifications: {
@@ -191,7 +191,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 401,
         name: "Dry Type Belt Grinder",
-        image: "/images/belt-polisher/dry.jpg",
+        image: "/Metallurgy/belt-polisher/dry.jpg",
         description:
           "Dry belt polishing machine for rapid material removal.",
         specifications: {
@@ -203,7 +203,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 402,
         name: "Wet & Dry Belt Grinder",
-        image: "/images/belt-polisher/wet-dry.jpg",
+        image: "/Metallurgy/belt-polisher/wet-dry.jpg",
         description:
           "Versatile belt polisher supporting both wet and dry operations.",
         specifications: {
@@ -222,7 +222,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 501,
         name: "Mechanical Mounting Press",
-        image: "/images/mounting/mechanical.jpg",
+        image: "/Metallurgy/mounting/hydraulic.webp",
         description:
           "Manual mounting press for routine metallographic specimen mounting.",
         specifications: {
@@ -234,7 +234,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 502,
         name: "Hydraulic Mounting Press",
-        image: "/images/mounting/hydraulic.jpg",
+        image: "/Metallurgy/mounting/hydraulic.webp",
         description:
           "Hydraulically operated press for consistent mounting quality.",
         specifications: {
@@ -246,7 +246,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 503,
         name: "Pneumatic Automatic Mounting Press",
-        image: "/images/mounting/pneumatic.jpg",
+        image: "/Metallurgy/mounting/pneumatic.webp",
         description:
           "Fully automatic pneumatic press for high-volume laboratories.",
         specifications: {
@@ -265,7 +265,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 601,
         name: "Abrasive Wheel Cut-off Machine",
-        image: "/images/cutoff/abrasive.jpg",
+        image: "/Metallurgy/cutoff/abrasive.jpeg",
         description:
           "Used for sectioning hard metallic samples using abrasive wheels.",
         specifications: {
@@ -277,7 +277,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 602,
         name: "Diamond Wheel Cut-off Machine",
-        image: "/images/cutoff/diamond.jpg",
+        image: "/Metallurgy/cutoff/diamond.jpeg",
         description:
           "Precision cutting machine for delicate and hard materials.",
         specifications: {
@@ -286,18 +286,7 @@ export const metallographicProducts: MetallographicCategory[] = [
           application: "Precision sectioning",
         },
       },
-      {
-        id: 603,
-        name: "Thin Sectioning Cut-off Machine",
-        image: "/images/cutoff/thin-section.jpg",
-        description:
-          "Specialized machine for ultra-thin metallographic sectioning.",
-        specifications: {
-          cuttingType: "Thin sectioning",
-          thickness: "Micron-level",
-          application: "Research & analysis",
-        },
-      },
+      
     ],
   },
 
@@ -308,7 +297,7 @@ export const metallographicProducts: MetallographicCategory[] = [
       {
         id: 701,
         name: "Electrolytic Polishing-cum-Etching Machine",
-        image: "/images/electrolytic/polishing-etching.jpg",
+        image: "/Metallurgy/polishing/polishing-etching.jpeg",
         description:
           "Used to reveal true microstructure through electrolytic polishing and etching.",
         specifications: {

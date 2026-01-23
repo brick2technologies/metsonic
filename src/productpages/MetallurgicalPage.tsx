@@ -57,7 +57,7 @@ const MetallurgicalPage: React.FC = () => {
       {/* Header */}
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-gray-800">
-          Metallurgical Products
+          Metallurgical Lab Equipments
         </h1>
         <p className="mt-2 text-sm text-gray-600">
           Precision equipment for metallography & material testing
@@ -110,7 +110,7 @@ const MetallurgicalPage: React.FC = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-full w-full object-cover transition group-hover:scale-105"
+                className="h-full w-full object-contain transition group-hover:scale-105"
               />
             </div>
 

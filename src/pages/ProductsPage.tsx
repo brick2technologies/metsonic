@@ -39,7 +39,7 @@ const products = [
     title: "Ultrasonic Cleaning Machines",
     description:
       "High-performance ultrasonic cleaning systems designed for efficient removal of contaminants from precision components in laboratories and industrial environments.",
-    image: "/Ultrasonic/ultrasonic-cleaner.jpg",
+    image: "/UltraSonic/ultra-banner.jpeg",
     link: "/products/ultrasonic",
     bg: true,
     reverse: true,
@@ -65,7 +65,7 @@ const products = [
 
 
 export default function ProductsPage() {
-    const { openModal } = useEnquiryModal();
+  const { openModal } = useEnquiryModal();
   return (
     <main className="bg-white text-gray-800">
 
@@ -105,7 +105,7 @@ export default function ProductsPage() {
               src={item.image}
               alt={item.title}
               className={`
-                rounded-2xl shadow-lg
+                rounded-2xl shadow-lg h-[300px] w-full object-cover
                 ${item.reverse ? "lg:order-2" : ""}
               `}
             />

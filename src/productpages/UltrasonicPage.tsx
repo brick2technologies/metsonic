@@ -64,7 +64,7 @@ const UltrasonicPage: React.FC = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-cover transition group-hover:scale-105"
+                  className="h-full w-full object-contain transition group-hover:scale-105"
                 />
               </div>
 

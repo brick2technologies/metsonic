@@ -18,9 +18,21 @@ export const ndtProducts: NDTCategory[] = [
     categoryName: "Ultrasonic Flaw Detectors",
     products: [
       {
+        id: 101,
+        name: "Dolphitech Dolphcam2",
+        image: "/dolphitech/dolphicam2.jpg",
+        description:
+          "Compact ultrasonic flaw detector used for detecting internal defects in welds and materials.",
+        specifications: {
+          Type: "Portable",
+          Display: "Digital A-scan",
+          Application: "Weld inspection, forgings",
+        },
+      },
+      {
         id: 1001,
         name: "Portable Ultrasonic Flaw Detector",
-        image: "/images/ndt/ut-portable.jpg",
+        image: "/ndt/flaw-detector/portable.jpeg",
         description:
           "Compact ultrasonic flaw detector used for detecting internal defects in welds and materials.",
         specifications: {
@@ -32,7 +44,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 1002,
         name: "Palm Top Ultrasonic Flaw Detector (Recordable)",
-        image: "/images/ndt/ut-palm-top.jpg",
+        image: "/ndt/flaw-detector/palm.jpeg",
         description:
           "Hand-held palm top flaw detector with data recording capability.",
         specifications: {
@@ -44,7 +56,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 1003,
         name: "Multichannel Ultrasonic Flaw Detector",
-        image: "/images/ndt/ut-multichannel.jpg",
+        image: "/ndt/flaw-detector/multi-channel.jpeg",
         description:
           "Advanced microprocessor-controlled system for complex ultrasonic inspections.",
         specifications: {
@@ -56,7 +68,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 1004,
         name: "Ultrasonic Immersion Testing System",
-        image: "/images/ndt/ut-immersion.jpg",
+        image: "/ndt/flaw-detector/immersion.webp",
         description:
           "High-precision ultrasonic system used for immersion testing of components.",
         specifications: {
@@ -74,32 +86,8 @@ export const ndtProducts: NDTCategory[] = [
     products: [
       {
         id: 2001,
-        name: "Hand-held Ultrasonic Thickness Gauge",
-        image: "/images/ndt/thickness-handheld.jpg",
-        description:
-          "Portable thickness gauge for measuring material thickness from one side.",
-        specifications: {
-          Type: "Hand-held",
-          MeasurementRange: "0.8 – 300 mm",
-          Application: "Corrosion monitoring",
-        },
-      },
-      {
-        id: 2002,
-        name: "Through-Coat Ultrasonic Thickness Gauge",
-        image: "/images/ndt/thickness-through-coat.jpg",
-        description:
-          "Measures thickness without removing surface coatings.",
-        specifications: {
-          Feature: "Through coating measurement",
-          CoatingThickness: "Up to 20 mm",
-          Application: "Painted structures",
-        },
-      },
-      {
-        id: 2003,
-        name: "Portable Microprocessor Based Thickness Gauge",
-        image: "/images/ndt/thickness-microprocessor.jpg",
+        name: "Microprocessor Based Thickness Gauge",
+        image: "/ndt/flaw-detector/thickness-microprocessor.png",
         description:
           "Advanced thickness gauge with microprocessor-based signal processing.",
         specifications: {
@@ -109,9 +97,34 @@ export const ndtProducts: NDTCategory[] = [
         },
       },
       {
+        id: 2002,
+        name: "Through-Coat Ultrasonic Thickness Gauge",
+        image: "/ndt/flaw-detector/thickness-through-coat.jpeg",
+        description:
+          "Measures thickness without removing surface coatings.",
+        specifications: {
+          Feature: "Through coating measurement",
+          CoatingThickness: "Up to 20 mm",
+          Application: "Painted structures",
+        },
+      },
+      
+      {
+        id: 2003,
+        name: "High Precision Thickness Gauge",
+        image: "/ndt/flaw-detector/coating-thickness.jpg",
+        description:
+          "Used for measuring coating thickness on ferrous and non-ferrous materials.",
+        specifications: {
+          MeasurementType: "Coating thickness",
+          Material: "Ferrous & Non-ferrous",
+          Application: "Paint & coating inspection",
+        },
+      },
+      {
         id: 2004,
         name: "Coating Thickness Gauge",
-        image: "/images/ndt/coating-thickness.jpg",
+        image: "/ndt/flaw-detector/coating-thickness.jpeg",
         description:
           "Used for measuring coating thickness on ferrous and non-ferrous materials.",
         specifications: {
@@ -130,7 +143,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 3001,
         name: "Magnetic Yoke Crack Detector",
-        image: "/images/ndt/magnetic-yoke.jpg",
+        image: "/ndt/flaw-detector/magnetic-yoke.webp",
         description:
           "Portable yoke type detector for surface and near-surface crack detection.",
         specifications: {
@@ -142,7 +155,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 3002,
         name: "Magnetic Prod Crack Detector",
-        image: "/images/ndt/magnetic-prod.jpg",
+        image: "/ndt/flaw-detector/magnetic-prod.webp",
         description:
           "Prod type detector for localized magnetic particle inspection.",
         specifications: {
@@ -154,7 +167,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 3003,
         name: "Bench Type Magnetic Crack Detector",
-        image: "/images/ndt/magnetic-bench.jpg",
+        image: "/ndt/flaw-detector/bench.jpeg",
         description:
           "Stationary magnetic particle inspection system for batch testing.",
         specifications: {
@@ -163,18 +176,7 @@ export const ndtProducts: NDTCategory[] = [
           Application: "Production inspection",
         },
       },
-      {
-        id: 3004,
-        name: "Demagnetiser Unit",
-        image: "/images/ndt/demagnetiser.jpg",
-        description:
-          "Used to remove residual magnetism after magnetic testing.",
-        specifications: {
-          Function: "Demagnetisation",
-          Operation: "AC field",
-          Application: "Post inspection process",
-        },
-      },
+      
     ],
   },
 
@@ -185,7 +187,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 4001,
         name: "Portable Industrial X-Ray System",
-        image: "/images/ndt/xray-portable.jpg",
+        image: "/ndt/flaw-detector/xray-portable.jpeg",
         description:
           "Portable X-ray system for radiographic inspection of welds and castings.",
         specifications: {
@@ -204,7 +206,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 5001,
         name: "Visual Dye Penetrant Chemical",
-        image: "/images/ndt/dpt-visual.jpg",
+        image: "/ndt/flaw-detector/penetrant.jpeg",
         description:
           "Visible dye penetrant for detecting surface-breaking defects.",
         specifications: {
@@ -216,7 +218,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 5002,
         name: "Fluorescent Dye Penetrant Chemical",
-        image: "/images/ndt/dpt-fluorescent.jpg",
+        image: "/ndt/flaw-detector/dpt-fluorescent.jpeg",
         description:
           "Fluorescent penetrant used under UV light for high sensitivity inspection.",
         specifications: {
@@ -228,7 +230,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 5003,
         name: "Automated Dye Penetrant System",
-        image: "/images/ndt/dpt-automated.jpg",
+        image: "/ndt/flaw-detector/dpt-automated.jpeg",
         description:
           "Automated penetrant inspection system for mass production.",
         specifications: {
@@ -247,7 +249,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6001,
         name: "UV Lamp",
-        image: "/images/ndt/blacklight-lamp.jpg",
+        image: "/ndt/flaw-detector/lamp.jpeg",
         description:
           "UV lamp used for fluorescent magnetic particle and penetrant inspection.",
         specifications: {
@@ -259,7 +261,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6002,
         name: "Test Panels",
-        image: "/images/ndt/test-panels.jpg",
+        image: "/ndt/flaw-detector/test-pannel.jpeg",
         description:
           "Reference panels used to verify performance of penetrant systems.",
         specifications: {
@@ -271,7 +273,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6003,
         name: "UV Bulbs & Gauz Meters",
-        image: "/images/ndt/uv-bulb-gauz-meter.jpg",
+        image: "/ndt/flaw-detector/gauz.jpeg",
         description:
           "Accessories used for UV intensity measurement and replacement.",
         specifications: {
@@ -284,7 +286,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6004,
         name: "Pie Guage",
-        image: "/images/ndt/uv-bulb-gauz-meter.jpg",
+        image: "/ndt/flaw-detector/gauge.jpeg",
         description:
           "Accessories used for UV intensity measurement and replacement.",
         specifications: {
@@ -296,7 +298,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6005,
         name: "Lux Meter",
-        image: "/images/ndt/uv-bulb-gauz-meter.jpg",
+        image: "/ndt/flaw-detector/lux-meter.jpeg",
         description:
           "Accessories used for UV intensity measurement and replacement.",
         specifications: {
@@ -308,7 +310,7 @@ export const ndtProducts: NDTCategory[] = [
       {
         id: 6006,
         name: "UV Indensity Meter",
-        image: "/images/ndt/uv-bulb-gauz-meter.jpg",
+        image: "/ndt/flaw-detector/uv-meter.webp",
         description:
           "Accessories used for UV intensity measurement and replacement.",
         specifications: {
