@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const products = [
     {
         title: "Metallurgical Lab Equipments",
@@ -49,6 +51,7 @@ export default function ProductsSection() {
                 </div>
 
                 {/* Product Cards */}
+                <Link to="/products/">
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {products.map((item, index) => (
                         <div
@@ -86,6 +89,7 @@ export default function ProductsSection() {
                         </div>
                     ))}
                 </div>
+                </Link>
             </div>
         </section>
     );

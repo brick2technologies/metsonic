@@ -21,14 +21,14 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           {/* Icon / Symbol Logo */}
           <img
-            src="logo.jpg"
+            src="/logo.jpg"
             alt="Company Logo Icon"
             className="h-12 sm:h-14 w-auto object-contain"
           />
 
           {/* Company Name Logo */}
           <img
-            src="name.jpg"
+            src="/name.jpg"
             alt="Company Name Logo"
             className="h-7 sm:h-9 w-auto object-contain"
           />

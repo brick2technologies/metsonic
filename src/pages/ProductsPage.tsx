@@ -36,15 +36,33 @@ const products = [
     bg: false,
   },
   {
+    title: "Ultrasonic Cleaning Machines",
+    description:
+      "High-performance ultrasonic cleaning systems designed for efficient removal of contaminants from precision components in laboratories and industrial environments.",
+    image: "/Ultrasonic/ultrasonic-cleaner.jpg",
+    link: "/products/ultrasonic",
+    bg: true,
+    reverse: true,
+  },
+  {
+    title: "Chemical Testing Equipment",
+    description:
+      "Reliable laboratory equipment for elemental analysis, heat treatment, sample preparation, and chemical evaluation to ensure accurate testing and quality control.",
+    image: "/ChemicalTesting/chemical-testing.jpg",
+    link: "/products/chemical-testing",
+    bg: false,
+  },
+  {
     title: "Consumables",
     description:
       "Consumables are items that are used up, depleted, or worn out during regular use and must be replaced frequently to maintain operations.",
     image: "/consumables.webp",
-    link: "/products/chemical",
+    link: "/products/consumables",
     bg: true,
     reverse: true,
   },
 ];
+
 
 export default function ProductsPage() {
     const { openModal } = useEnquiryModal();

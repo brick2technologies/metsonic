@@ -153,13 +153,39 @@ export default function HeroSlider() {
 
             {/* ================= PRODUCT SLIDES ================= */}
             {slides[index].type === "product" && (
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                {/* ===== BENTO IMAGE GRID (COMPACT + CONTAIN) ===== */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+                {/* ===== LEFT: TEXT ===== */}
+                <div className="order-2 lg:order-1 lg:col-span-5">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-blue-900 leading-tight">
+                    {slides[index].title}
+                  </h2>
+
+                  <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl">
+                    {slides[index].desc}
+                  </p>
+
+                  <div className="mt-8 flex gap-4">
+                    <button className="px-8 py-3 rounded-full border border-blue-900 text-sm hover:bg-blue-900 hover:text-white transition">
+                      Explore Products
+                    </button>
+
+                    <a
+                      href="/Metsonic-Catalog.pdf"
+                      download
+                      className="px-8 py-3 rounded-full border border-gray-300 text-sm hover:border-blue-900 transition"
+                    >
+                      Download Catalog
+                    </a>
+                  </div>
+                </div>
+
+                {/* ===== RIGHT: IMAGES ===== */}
                 <div className="order-1 lg:order-2 lg:col-span-6">
                   {slides[index].images ? (
 
                     slides[index].images.length === 2 ? (
-                      <div className="grid grid-cols-2 gap-2 aspect-[4/3] max-h-[380px]">
+                      <div className="grid grid-cols-2 gap-3 aspect-[4/3] max-h-[420px]">
                         {slides[index].images.map((img, i) => (
                           <div
                             key={i}
@@ -175,7 +201,7 @@ export default function HeroSlider() {
                       </div>
 
                     ) : slides[index].images.length === 4 ? (
-                      <div className="grid grid-cols-2 grid-rows-2 gap-2 aspect-[4/3] max-h-[380px]">
+                      <div className="grid grid-cols-2 grid-rows-2 gap-3 aspect-[4/3] max-h-[420px]">
                         {slides[index].images.map((img, i) => (
                           <div
                             key={i}
@@ -191,7 +217,7 @@ export default function HeroSlider() {
                       </div>
 
                     ) : (
-                      <div className="grid grid-cols-2 gap-2 aspect-[4/3] max-h-[380px]">
+                      <div className="grid grid-cols-2 gap-3 aspect-[4/3] max-h-[420px]">
 
                         {/* Left big */}
                         <div className="row-span-2 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
@@ -224,7 +250,7 @@ export default function HeroSlider() {
                     )
 
                   ) : (
-                    <div className="bg-gray-50 rounded-xl flex items-center justify-center max-h-[380px]">
+                    <div className="bg-gray-50 rounded-xl flex items-center justify-center max-h-[420px]">
                       <img
                         src={slides[index].image}
                         alt={slides[index].title}
@@ -234,35 +260,9 @@ export default function HeroSlider() {
                   )}
                 </div>
 
-
-
-
-
-                {/* ===== TEXT ===== */}
-                <div className="order-2 lg:order-1 lg:col-span-5">
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-blue-900 leading-tight">
-                    {slides[index].title}
-                  </h2>
-                  <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed">
-                    {slides[index].desc}
-                  </p>
-                  <div className="mt-8 flex gap-4">
-                    <button className="px-8 py-3 rounded-full border border-blue-900 text-sm hover:bg-blue-900 hover:text-white transition">
-                      Explore Products
-                    </button>
-                    <a
-                      href="/Metsonic-Catalog.pdf"
-                      download
-                      className="px-8 py-3 rounded-full border border-gray-300 text-sm hover:border-blue-900 transition"
-                    >
-                      Download Catalog
-                    </a>
-
-                  </div>
-                </div>
-
               </div>
             )}
+
           </motion.div>
         </AnimatePresence>
       </div>
